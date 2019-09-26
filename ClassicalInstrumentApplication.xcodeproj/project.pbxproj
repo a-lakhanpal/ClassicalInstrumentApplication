@@ -14,10 +14,10 @@
 		3020DAFD233A115D00BD3A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3020DAFB233A115D00BD3A7E /* LaunchScreen.storyboard */; };
 		302C746C233C8FC80088CB8F /* Violin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C7467233C8FC80088CB8F /* Violin.wav */; };
 		302C746D233C8FC80088CB8F /* Bagpipe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C7468233C8FC80088CB8F /* Bagpipe.wav */; };
-		302C746E233C8FC80088CB8F /* Tabla.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C7469233C8FC80088CB8F /* Tabla.wav */; };
 		302C746F233C8FC80088CB8F /* Mandolian.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C746A233C8FC80088CB8F /* Mandolian.wav */; };
 		302C7470233C8FC80088CB8F /* Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C746B233C8FC80088CB8F /* Piano.wav */; };
 		302C7472233C9D6E0088CB8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302C7471233C9D6E0088CB8F /* Main.storyboard */; };
+		302C7494233CC5E10088CB8F /* Tabla.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C7493233CC5E10088CB8F /* Tabla.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,10 +30,10 @@
 		3020DAFE233A115D00BD3A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		302C7467233C8FC80088CB8F /* Violin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Violin.wav; sourceTree = "<group>"; };
 		302C7468233C8FC80088CB8F /* Bagpipe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bagpipe.wav; sourceTree = "<group>"; };
-		302C7469233C8FC80088CB8F /* Tabla.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tabla.wav; sourceTree = "<group>"; };
 		302C746A233C8FC80088CB8F /* Mandolian.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mandolian.wav; sourceTree = "<group>"; };
 		302C746B233C8FC80088CB8F /* Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano.wav; sourceTree = "<group>"; };
 		302C7471233C9D6E0088CB8F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		302C7493233CC5E10088CB8F /* Tabla.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tabla.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +73,7 @@
 				302C7471233C9D6E0088CB8F /* Main.storyboard */,
 				3020DAF9233A115D00BD3A7E /* Assets.xcassets */,
 				3020DAFB233A115D00BD3A7E /* LaunchScreen.storyboard */,
+				302C7493233CC5E10088CB8F /* Tabla.wav */,
 				3020DAFE233A115D00BD3A7E /* Info.plist */,
 			);
 			path = ClassicalInstrumentApplication;
@@ -84,7 +85,6 @@
 				302C7468233C8FC80088CB8F /* Bagpipe.wav */,
 				302C746A233C8FC80088CB8F /* Mandolian.wav */,
 				302C746B233C8FC80088CB8F /* Piano.wav */,
-				302C7469233C8FC80088CB8F /* Tabla.wav */,
 				302C7467233C8FC80088CB8F /* Violin.wav */,
 			);
 			path = Sounds;
@@ -152,8 +152,8 @@
 				3020DAFA233A115D00BD3A7E /* Assets.xcassets in Resources */,
 				302C746F233C8FC80088CB8F /* Mandolian.wav in Resources */,
 				302C7470233C8FC80088CB8F /* Piano.wav in Resources */,
-				302C746E233C8FC80088CB8F /* Tabla.wav in Resources */,
 				302C7472233C9D6E0088CB8F /* Main.storyboard in Resources */,
+				302C7494233CC5E10088CB8F /* Tabla.wav in Resources */,
 				302C746C233C8FC80088CB8F /* Violin.wav in Resources */,
 				302C746D233C8FC80088CB8F /* Bagpipe.wav in Resources */,
 			);
