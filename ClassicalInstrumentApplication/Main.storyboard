@@ -10,7 +10,7 @@
         <!--Tabla-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="Tabla" customClass="ViewController" customModule="ClassicalInstrumentApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Tabla" customClass="TablaViewController" customModule="ClassicalInstrumentApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="Tabla View Controller" customClass="RedViewController">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,12 +19,15 @@
                                 <rect key="frame" x="31" y="409" width="353" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Play Tabla ">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <action selector="PlayTabla:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ir-j9-rGZ"/>
+                                    <action selector="PlayTablaButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2E-QF-1pl"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tabla" translatesAutoresizingMaskIntoConstraints="NO" id="uVt-W0-Mek">
@@ -46,33 +49,32 @@
         <!--Piano-->
         <scene sceneID="cLa-xy-t4m">
             <objects>
-                <viewController id="SCy-Ld-8Lu" userLabel="Piano" customClass="OrangeViewController" customModule="ClassicalInstrumentApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="SCy-Ld-8Lu" userLabel="Piano" customClass="PianoViewController" customModule="ClassicalInstrumentApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ICC-I6-fiW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm7-QD-NnP">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nm7-QD-NnP">
                                 <rect key="frame" x="31" y="402" width="353" height="81"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Play Piano ">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="PlayPianoButton:" destination="SCy-Ld-8Lu" eventType="touchUpInside" id="YF6-Oh-FZD"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="piano" translatesAutoresizingMaskIntoConstraints="NO" id="q0H-T6-0Iq">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="piano" translatesAutoresizingMaskIntoConstraints="NO" id="q0H-T6-0Iq">
                                 <rect key="frame" x="20" y="20" width="374" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="q0H-T6-0Iq" firstAttribute="top" secondItem="w1N-RP-r4L" secondAttribute="top" constant="50" id="5IJ-D9-72K"/>
-                            <constraint firstItem="w1N-RP-r4L" firstAttribute="trailing" secondItem="q0H-T6-0Iq" secondAttribute="trailing" constant="20" id="DOP-s5-vj4"/>
-                            <constraint firstItem="Nm7-QD-NnP" firstAttribute="leading" secondItem="w1N-RP-r4L" secondAttribute="leading" constant="33" id="P7Q-gb-Tck"/>
-                            <constraint firstItem="q0H-T6-0Iq" firstAttribute="leading" secondItem="w1N-RP-r4L" secondAttribute="leading" constant="20" id="hAK-k6-zdN"/>
-                            <constraint firstItem="w1N-RP-r4L" firstAttribute="bottom" secondItem="Nm7-QD-NnP" secondAttribute="bottom" constant="268" id="oQu-V9-pLm"/>
-                            <constraint firstItem="Nm7-QD-NnP" firstAttribute="top" secondItem="w1N-RP-r4L" secondAttribute="top" constant="473" id="sQN-6u-jyf"/>
-                            <constraint firstItem="w1N-RP-r4L" firstAttribute="trailing" secondItem="Nm7-QD-NnP" secondAttribute="trailing" constant="30" id="xuI-J5-XZ0"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="w1N-RP-r4L"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Piano" image="piano" id="Pur-dL-bD5"/>
@@ -141,34 +143,32 @@
         <!--Mandolian-->
         <scene sceneID="45I-7m-4xX">
             <objects>
-                <viewController id="erI-d0-Z3x" userLabel="Mandolian" sceneMemberID="viewController">
+                <viewController id="erI-d0-Z3x" userLabel="Mandolian" customClass="MandolinViewController" customModule="ClassicalInstrumentApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jTi-LH-3HI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7h-Xm-J8E">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7h-Xm-J8E">
                                 <rect key="frame" x="31" y="375" width="353" height="81"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Play Mandolian">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="PlayMandolinButton:" destination="erI-d0-Z3x" eventType="touchUpInside" id="csL-GK-P4e"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mandolian" translatesAutoresizingMaskIntoConstraints="NO" id="aFY-Cj-31z">
-                                <rect key="frame" x="20" y="20" width="374" height="359"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mandolian" translatesAutoresizingMaskIntoConstraints="NO" id="aFY-Cj-31z">
+                                <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Z1I-hy-XRH" firstAttribute="bottom" secondItem="R7h-Xm-J8E" secondAttribute="bottom" constant="240" id="2Ch-RZ-xZ4"/>
-                            <constraint firstItem="aFY-Cj-31z" firstAttribute="leading" secondItem="Z1I-hy-XRH" secondAttribute="leading" constant="20" id="7rE-oG-yRe"/>
-                            <constraint firstItem="R7h-Xm-J8E" firstAttribute="top" secondItem="Z1I-hy-XRH" secondAttribute="top" constant="438" id="QOV-z1-NJs"/>
-                            <constraint firstItem="R7h-Xm-J8E" firstAttribute="leading" secondItem="Z1I-hy-XRH" secondAttribute="leading" constant="31" id="ZzZ-L5-i0c"/>
-                            <constraint firstItem="Z1I-hy-XRH" firstAttribute="bottom" secondItem="aFY-Cj-31z" secondAttribute="bottom" constant="380" id="aWm-5Y-NZk"/>
-                            <constraint firstItem="aFY-Cj-31z" firstAttribute="top" secondItem="Z1I-hy-XRH" secondAttribute="top" constant="20" id="qfe-MR-ogE"/>
-                            <constraint firstItem="Z1I-hy-XRH" firstAttribute="trailing" secondItem="aFY-Cj-31z" secondAttribute="trailing" constant="20" id="vAs-bK-G2P"/>
-                            <constraint firstItem="Z1I-hy-XRH" firstAttribute="trailing" secondItem="R7h-Xm-J8E" secondAttribute="trailing" constant="30" id="xlv-Nm-84y"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Z1I-hy-XRH"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mandlian" image="mandolian" id="smr-S0-CUn"/>
@@ -180,34 +180,32 @@
         <!--Violin-->
         <scene sceneID="xgo-W1-Fqy">
             <objects>
-                <viewController id="qbb-R3-4W7" userLabel="Violin" sceneMemberID="viewController">
+                <viewController id="qbb-R3-4W7" userLabel="Violin" customClass="ViolinViewController" customModule="ClassicalInstrumentApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xdi-3O-0gR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCV-cP-zs1">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCV-cP-zs1">
                                 <rect key="frame" x="31" y="376" width="353" height="81"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Play Violin">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="PlayViolinButton:" destination="qbb-R3-4W7" eventType="touchUpInside" id="eYW-fo-Xkd"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="violin" translatesAutoresizingMaskIntoConstraints="NO" id="Wmm-OQ-btw">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="violin" translatesAutoresizingMaskIntoConstraints="NO" id="Wmm-OQ-btw">
                                 <rect key="frame" x="20" y="20" width="374" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="YCV-cP-zs1" firstAttribute="top" secondItem="DnE-Ah-rr7" secondAttribute="top" constant="440" id="2Fj-hA-Td7"/>
-                            <constraint firstItem="DnE-Ah-rr7" firstAttribute="trailing" secondItem="Wmm-OQ-btw" secondAttribute="trailing" constant="20" id="9Jj-cE-BXv"/>
-                            <constraint firstItem="DnE-Ah-rr7" firstAttribute="bottom" secondItem="Wmm-OQ-btw" secondAttribute="bottom" constant="365" id="T5M-fR-pMP"/>
-                            <constraint firstItem="Wmm-OQ-btw" firstAttribute="leading" secondItem="DnE-Ah-rr7" secondAttribute="leading" constant="20" id="UgE-hI-ntQ"/>
-                            <constraint firstItem="YCV-cP-zs1" firstAttribute="leading" secondItem="DnE-Ah-rr7" secondAttribute="leading" constant="20" id="XNQ-MI-g76"/>
-                            <constraint firstItem="Wmm-OQ-btw" firstAttribute="top" secondItem="DnE-Ah-rr7" secondAttribute="top" constant="35" id="dW6-ci-WxJ"/>
-                            <constraint firstItem="DnE-Ah-rr7" firstAttribute="bottom" secondItem="YCV-cP-zs1" secondAttribute="bottom" constant="238" id="rgI-0X-Q2G"/>
-                            <constraint firstItem="DnE-Ah-rr7" firstAttribute="trailing" secondItem="YCV-cP-zs1" secondAttribute="trailing" constant="41" id="zoM-v6-z6m"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DnE-Ah-rr7"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Violin" image="violin" id="aKJ-Kf-AC3"/>
@@ -219,34 +217,32 @@
         <!--Bagpipe-->
         <scene sceneID="x2n-lz-IwN">
             <objects>
-                <viewController id="pJp-8b-TSf" userLabel="Bagpipe" sceneMemberID="viewController">
+                <viewController id="pJp-8b-TSf" userLabel="Bagpipe" customClass="BagpipeViewController" customModule="ClassicalInstrumentApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dCC-o7-JdM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bagpipe" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-th-bMD">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bagpipe" translatesAutoresizingMaskIntoConstraints="NO" id="fs6-th-bMD">
                                 <rect key="frame" x="20" y="17" width="374" height="359"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-g6-ZKi">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgh-g6-ZKi">
                                 <rect key="frame" x="31" y="389" width="353" height="81"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <state key="normal" title="Play Bagpipe ">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="PlayBagpipeButton:" destination="pJp-8b-TSf" eventType="touchUpInside" id="qq8-oo-b5c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="fs6-th-bMD" firstAttribute="leading" secondItem="wP9-u1-1XF" secondAttribute="leading" constant="20" id="43w-30-N92"/>
-                            <constraint firstItem="Qgh-g6-ZKi" firstAttribute="top" secondItem="wP9-u1-1XF" secondAttribute="top" constant="452" id="SS8-1R-9Mf"/>
-                            <constraint firstItem="fs6-th-bMD" firstAttribute="top" secondItem="wP9-u1-1XF" secondAttribute="top" constant="20" id="Z2X-JH-M99"/>
-                            <constraint firstItem="wP9-u1-1XF" firstAttribute="bottom" secondItem="Qgh-g6-ZKi" secondAttribute="bottom" constant="226" id="dns-PQ-4ps"/>
-                            <constraint firstItem="Qgh-g6-ZKi" firstAttribute="leading" secondItem="wP9-u1-1XF" secondAttribute="leading" constant="31" id="hUH-nn-HCW"/>
-                            <constraint firstItem="wP9-u1-1XF" firstAttribute="bottom" secondItem="fs6-th-bMD" secondAttribute="bottom" constant="380" id="iaF-z3-nIY"/>
-                            <constraint firstItem="wP9-u1-1XF" firstAttribute="trailing" secondItem="fs6-th-bMD" secondAttribute="trailing" constant="20" id="lMw-W7-ApC"/>
-                            <constraint firstItem="wP9-u1-1XF" firstAttribute="trailing" secondItem="Qgh-g6-ZKi" secondAttribute="trailing" constant="30" id="zmp-dF-BcB"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="wP9-u1-1XF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Bagpipe" image="bagpipe" id="jor-VV-bVR"/>

@@ -9,31 +9,39 @@
 /* Begin PBXBuildFile section */
 		3020DAF1233A115B00BD3A7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020DAF0233A115B00BD3A7E /* AppDelegate.swift */; };
 		3020DAF3233A115B00BD3A7E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020DAF2233A115B00BD3A7E /* SceneDelegate.swift */; };
-		3020DAF5233A115B00BD3A7E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3020DAF4233A115B00BD3A7E /* ViewController.swift */; };
 		3020DAFA233A115D00BD3A7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3020DAF9233A115D00BD3A7E /* Assets.xcassets */; };
 		3020DAFD233A115D00BD3A7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3020DAFB233A115D00BD3A7E /* LaunchScreen.storyboard */; };
-		302C746C233C8FC80088CB8F /* Violin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C7467233C8FC80088CB8F /* Violin.wav */; };
-		302C746D233C8FC80088CB8F /* Bagpipe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C7468233C8FC80088CB8F /* Bagpipe.wav */; };
-		302C746F233C8FC80088CB8F /* Mandolian.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C746A233C8FC80088CB8F /* Mandolian.wav */; };
-		302C7470233C8FC80088CB8F /* Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C746B233C8FC80088CB8F /* Piano.wav */; };
 		302C7472233C9D6E0088CB8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 302C7471233C9D6E0088CB8F /* Main.storyboard */; };
 		302C7494233CC5E10088CB8F /* Tabla.wav in Resources */ = {isa = PBXBuildFile; fileRef = 302C7493233CC5E10088CB8F /* Tabla.wav */; };
+		309CE992233CCADF00172F03 /* PianoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CE991233CCADF00172F03 /* PianoViewController.swift */; };
+		309CE997233CCFC000172F03 /* Mandolian.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309CE993233CCFBF00172F03 /* Mandolian.wav */; };
+		309CE998233CCFC000172F03 /* Violin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309CE994233CCFBF00172F03 /* Violin.wav */; };
+		309CE999233CCFC000172F03 /* Bagpipe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309CE995233CCFBF00172F03 /* Bagpipe.wav */; };
+		309CE99A233CCFC000172F03 /* Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309CE996233CCFBF00172F03 /* Piano.wav */; };
+		309CE99C233CD2A000172F03 /* TablaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CE99B233CD2A000172F03 /* TablaViewController.swift */; };
+		309CE99E233CD2AF00172F03 /* MandolinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CE99D233CD2AF00172F03 /* MandolinViewController.swift */; };
+		309CE9A0233CD2C900172F03 /* BagpipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CE99F233CD2C900172F03 /* BagpipeViewController.swift */; };
+		309CE9A2233CD2DB00172F03 /* ViolinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CE9A1233CD2DB00172F03 /* ViolinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3020DAED233A115B00BD3A7E /* ClassicalInstrumentApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicalInstrumentApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3020DAF0233A115B00BD3A7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3020DAF2233A115B00BD3A7E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3020DAF4233A115B00BD3A7E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3020DAF9233A115D00BD3A7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3020DAFC233A115D00BD3A7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3020DAFE233A115D00BD3A7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		302C7467233C8FC80088CB8F /* Violin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Violin.wav; sourceTree = "<group>"; };
-		302C7468233C8FC80088CB8F /* Bagpipe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bagpipe.wav; sourceTree = "<group>"; };
-		302C746A233C8FC80088CB8F /* Mandolian.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mandolian.wav; sourceTree = "<group>"; };
-		302C746B233C8FC80088CB8F /* Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano.wav; sourceTree = "<group>"; };
 		302C7471233C9D6E0088CB8F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		302C7493233CC5E10088CB8F /* Tabla.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Tabla.wav; sourceTree = "<group>"; };
+		309CE991233CCADF00172F03 /* PianoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoViewController.swift; sourceTree = "<group>"; };
+		309CE993233CCFBF00172F03 /* Mandolian.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Mandolian.wav; sourceTree = "<group>"; };
+		309CE994233CCFBF00172F03 /* Violin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Violin.wav; sourceTree = "<group>"; };
+		309CE995233CCFBF00172F03 /* Bagpipe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bagpipe.wav; sourceTree = "<group>"; };
+		309CE996233CCFBF00172F03 /* Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano.wav; sourceTree = "<group>"; };
+		309CE99B233CD2A000172F03 /* TablaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablaViewController.swift; sourceTree = "<group>"; };
+		309CE99D233CD2AF00172F03 /* MandolinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandolinViewController.swift; sourceTree = "<group>"; };
+		309CE99F233CD2C900172F03 /* BagpipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagpipeViewController.swift; sourceTree = "<group>"; };
+		309CE9A1233CD2DB00172F03 /* ViolinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViolinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,28 +74,24 @@
 		3020DAEF233A115B00BD3A7E /* ClassicalInstrumentApplication */ = {
 			isa = PBXGroup;
 			children = (
-				302C7466233C8F8D0088CB8F /* Sounds */,
 				3020DAF0233A115B00BD3A7E /* AppDelegate.swift */,
 				3020DAF2233A115B00BD3A7E /* SceneDelegate.swift */,
-				3020DAF4233A115B00BD3A7E /* ViewController.swift */,
 				302C7471233C9D6E0088CB8F /* Main.storyboard */,
 				3020DAF9233A115D00BD3A7E /* Assets.xcassets */,
 				3020DAFB233A115D00BD3A7E /* LaunchScreen.storyboard */,
 				302C7493233CC5E10088CB8F /* Tabla.wav */,
+				309CE995233CCFBF00172F03 /* Bagpipe.wav */,
+				309CE993233CCFBF00172F03 /* Mandolian.wav */,
+				309CE996233CCFBF00172F03 /* Piano.wav */,
+				309CE994233CCFBF00172F03 /* Violin.wav */,
 				3020DAFE233A115D00BD3A7E /* Info.plist */,
+				309CE991233CCADF00172F03 /* PianoViewController.swift */,
+				309CE99B233CD2A000172F03 /* TablaViewController.swift */,
+				309CE99D233CD2AF00172F03 /* MandolinViewController.swift */,
+				309CE99F233CD2C900172F03 /* BagpipeViewController.swift */,
+				309CE9A1233CD2DB00172F03 /* ViolinViewController.swift */,
 			);
 			path = ClassicalInstrumentApplication;
-			sourceTree = "<group>";
-		};
-		302C7466233C8F8D0088CB8F /* Sounds */ = {
-			isa = PBXGroup;
-			children = (
-				302C7468233C8FC80088CB8F /* Bagpipe.wav */,
-				302C746A233C8FC80088CB8F /* Mandolian.wav */,
-				302C746B233C8FC80088CB8F /* Piano.wav */,
-				302C7467233C8FC80088CB8F /* Violin.wav */,
-			);
-			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,14 +152,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				309CE999233CCFC000172F03 /* Bagpipe.wav in Resources */,
 				3020DAFD233A115D00BD3A7E /* LaunchScreen.storyboard in Resources */,
+				309CE998233CCFC000172F03 /* Violin.wav in Resources */,
+				309CE997233CCFC000172F03 /* Mandolian.wav in Resources */,
+				309CE99A233CCFC000172F03 /* Piano.wav in Resources */,
 				3020DAFA233A115D00BD3A7E /* Assets.xcassets in Resources */,
-				302C746F233C8FC80088CB8F /* Mandolian.wav in Resources */,
-				302C7470233C8FC80088CB8F /* Piano.wav in Resources */,
 				302C7472233C9D6E0088CB8F /* Main.storyboard in Resources */,
 				302C7494233CC5E10088CB8F /* Tabla.wav in Resources */,
-				302C746C233C8FC80088CB8F /* Violin.wav in Resources */,
-				302C746D233C8FC80088CB8F /* Bagpipe.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,9 +170,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3020DAF5233A115B00BD3A7E /* ViewController.swift in Sources */,
+				309CE99E233CD2AF00172F03 /* MandolinViewController.swift in Sources */,
 				3020DAF1233A115B00BD3A7E /* AppDelegate.swift in Sources */,
+				309CE992233CCADF00172F03 /* PianoViewController.swift in Sources */,
 				3020DAF3233A115B00BD3A7E /* SceneDelegate.swift in Sources */,
+				309CE9A2233CD2DB00172F03 /* ViolinViewController.swift in Sources */,
+				309CE99C233CD2A000172F03 /* TablaViewController.swift in Sources */,
+				309CE9A0233CD2C900172F03 /* BagpipeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
