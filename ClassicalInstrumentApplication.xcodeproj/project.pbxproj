@@ -19,9 +19,9 @@
 		309CE999233CCFC000172F03 /* Bagpipe.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309CE995233CCFBF00172F03 /* Bagpipe.wav */; };
 		309CE99A233CCFC000172F03 /* Piano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 309CE996233CCFBF00172F03 /* Piano.wav */; };
 		309CE99C233CD2A000172F03 /* TablaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CE99B233CD2A000172F03 /* TablaViewController.swift */; };
-		309CE99E233CD2AF00172F03 /* MandolinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CE99D233CD2AF00172F03 /* MandolinViewController.swift */; };
 		309CE9A0233CD2C900172F03 /* BagpipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CE99F233CD2C900172F03 /* BagpipeViewController.swift */; };
 		309CE9A2233CD2DB00172F03 /* ViolinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CE9A1233CD2DB00172F03 /* ViolinViewController.swift */; };
+		309CE9A4233CE3E000172F03 /* MendolinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309CE9A3233CE3E000172F03 /* MendolinViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +39,9 @@
 		309CE995233CCFBF00172F03 /* Bagpipe.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Bagpipe.wav; sourceTree = "<group>"; };
 		309CE996233CCFBF00172F03 /* Piano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Piano.wav; sourceTree = "<group>"; };
 		309CE99B233CD2A000172F03 /* TablaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablaViewController.swift; sourceTree = "<group>"; };
-		309CE99D233CD2AF00172F03 /* MandolinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MandolinViewController.swift; sourceTree = "<group>"; };
 		309CE99F233CD2C900172F03 /* BagpipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BagpipeViewController.swift; sourceTree = "<group>"; };
 		309CE9A1233CD2DB00172F03 /* ViolinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViolinViewController.swift; sourceTree = "<group>"; };
+		309CE9A3233CE3E000172F03 /* MendolinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MendolinViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +87,9 @@
 				3020DAFE233A115D00BD3A7E /* Info.plist */,
 				309CE991233CCADF00172F03 /* PianoViewController.swift */,
 				309CE99B233CD2A000172F03 /* TablaViewController.swift */,
-				309CE99D233CD2AF00172F03 /* MandolinViewController.swift */,
 				309CE99F233CD2C900172F03 /* BagpipeViewController.swift */,
 				309CE9A1233CD2DB00172F03 /* ViolinViewController.swift */,
+				309CE9A3233CE3E000172F03 /* MendolinViewController.swift */,
 			);
 			path = ClassicalInstrumentApplication;
 			sourceTree = "<group>";
@@ -170,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				309CE99E233CD2AF00172F03 /* MandolinViewController.swift in Sources */,
+				309CE9A4233CE3E000172F03 /* MendolinViewController.swift in Sources */,
 				3020DAF1233A115B00BD3A7E /* AppDelegate.swift in Sources */,
 				309CE992233CCADF00172F03 /* PianoViewController.swift in Sources */,
 				3020DAF3233A115B00BD3A7E /* SceneDelegate.swift in Sources */,
